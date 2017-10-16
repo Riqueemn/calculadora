@@ -1,0 +1,73 @@
+<ion-content>
+
+  <div id="resultado"></div>
+  {{numero_1}}{{this.x}}<br>
+  {{numero_2}}<br>
+  {{this.resultado}}
+
+
+
+  <div id="valores">
+
+    <div id="div-valores">
+
+      <div class="numeros" (click)="num('1')">
+        <p class="numero">1</p>
+      </div>
+      <div class="numeros" (click)="num(2)">
+        <p class="numero">2</p>
+      </div>
+      <div class="numeros" (click)="num(3)">
+        <p class="numero">3</p>
+      </div>
+      <div class="numeros" (click)="num(4)">
+        <p class="numero">4</p>
+      </div>
+      <div class="numeros" (click)="num(5)">
+        <p class="numero">5</p>
+      </div>
+      <div class="numeros" (click)="num(6)">
+        <p class="numero">6</p>
+      </div>
+      <div class="numeros" (click)="num(7)">
+        <p class="numero">7</p>
+      </div>
+      <div class="numeros" (click)="num(8)">
+        <p class="numero">8</p>
+      </div>
+      <div class="numeros" (click)="num(9)">
+        <p class="numero">9</p>
+      </div>
+
+    </div>
+
+
+    <div id="div-operadores">
+
+      <div class="simbolos">
+        <p class="operadores" (click)="addSegNum('+')">+</p>
+      </div>
+      <div class="simbolos">
+        <p class="operadores" (click)="addSegNum('-')">-</p>
+      </div>
+      <div class="simbolos">
+        <p class="operadores" (click)="addSegNum('*')">*</p>
+      </div>
+      <div class="simbolos">
+        <p class="operadores" (click)="addSegNum('/')">/</p>
+      </div>
+
+      <div class="simbolos">
+          <p class="operadores" (click)="apagar()">C</p>
+        </div>
+        <div class="simbolos">
+            <p class="operadores" (click)="addSegNum('√')">√</p>
+          </div>
+
+      
+
+    </div>
+
+  </div>
+
+</ion-content>
